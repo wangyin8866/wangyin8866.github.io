@@ -281,5 +281,5 @@ ul.share-group {
 
 .main-wrapper {
     background-size: cover;
-    background: #444 url("../image/banner.jpg") no-repeat fixed center center;
+    background: #444 url("../image/banner.jpg") no-repeat fixed ;
 }
