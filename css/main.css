@@ -1,0 +1,285 @@
+.clearFix:after {
+    /*清除浮动*/
+    /*父元素中的子元素浮动以后父元素要清空*/
+    content: '';
+    display: block; /*把行内元素转换为块级元素*/
+    clear: both;
+}
+
+nav {
+    background: transparent;
+    height: 50px;
+}
+
+ul {
+    margin: 0;
+}
+header {
+    background: rgba(0,0,0,0.4);
+}
+#banner {
+    background: transparent;
+    height: 700px;
+}
+
+nav ul {
+
+    list-style: none;
+    margin: 0;
+    float: right;
+}
+
+nav ul li, .logo {
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block; /*行内块*/
+    height: inherit; /*继承父元素*/
+    color: #fff;
+}
+
+.logo {
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px; /*字体间距*/
+    margin-left: 20px;
+
+}
+
+
+.inner {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 160px;
+}
+
+
+
+button {
+    border: none;
+    background: #089DB0;
+    color: #eee;
+
+}
+
+#banner button {
+    padding: 15px 60px;
+}
+
+.more {
+    margin-top: 280px;
+    color: #ffffff;
+}
+
+.sub-heading {
+    line-height: 30px;
+    margin: 30px 0;
+}
+h1 {
+    margin: 0;
+    color: #ffffff;
+}
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.inner .hr {
+    background: #ffffff;
+    width: 80%;
+}
+.inner p {
+    color: #ffffff;
+}
+.hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px auto;
+}
+
+.green-section {
+    background: #089DB0;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.green-section .hr {
+    background: #078494;
+    width: 60%;
+}
+
+.green-section .icon-group .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #0D6F7C;
+    transform: rotate(45deg); /*旋转*/
+    margin: 20px ;
+
+}
+.green-section .icon-group .icon p {
+    transform: rotate(-45deg); /*旋转*/
+}
+.icon-group {
+    margin-top: 60px;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.gray-section {
+    background: #252F34;
+    color: #fff;
+}
+
+.gray-section .img-section {
+    width: 45%;
+
+}
+
+.img-section img {
+    width: 100%;
+}
+
+.gray-section .text-section {
+    width: 55%;
+    position: relative;
+    top: 68px;
+    left: 50px;
+}
+
+.gray-section .text-section h2 {
+    margin-bottom: 20px;
+}
+
+.gray-section .text-section .sub-heading {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.text-section > * {
+    /*下面所有的子元素*/
+    max-width: 90%;
+}
+
+.article-preview:nth-child(odd) {
+    /*选择器匹配属于其父元素的奇数元素*/
+    background-color: rgba(255, 255, 255, 0.05); /*加滤镜*/
+
+}
+
+.article-preview > div {
+    /*下面所有的div*/
+    float: left;
+    font-size: 0;
+}
+
+.article-preview:after {
+    /*父元素中的子元素浮动以后父元素要清空*/
+    content: '';
+    display: block; /*把行内元素转换为块级元素*/
+    clear: both;
+}
+
+.purple-section {
+    background: #3F3965;
+    color: #ffffff;
+    padding: 80px;
+}
+
+.purple-section .heading-wrapper {
+    text-align: center;
+}
+
+.purple-section .hr {
+    background: #373259;
+    width: 60%;
+}
+
+.card {
+    float: left;
+    width: 50%;
+    min-height: 300px;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*  border: 1px solid #ffffff;*/
+}
+
+.card:first-child {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.card:nth-child(2) {
+    /*选择器匹配属于其父元素的第 N 个子元素,不论元素的类型*/
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.card:nth-child(3) {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(4) {
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.card:nth-child(5) {
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.card:nth-child(6) {
+    background: rgba(0, 0, 0, 0.24);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    min-height: 100px;
+    text-align: center;
+
+}
+
+ul.share-group {
+    display: block;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.share-group li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.copy {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.main-wrapper {
+    background-size: cover;
+    background: #444 url("../image/banner.jpg") no-repeat fixed center center;
+}
